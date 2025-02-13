@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #000000;
+}
+
+.dark {
+    --background: #121212;
+    --foreground: #ffffff;
+}
+
+body {
+    @apply bg-background text-foreground transition-colors duration-300;
+}
