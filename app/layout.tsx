@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme";
 import DarkModeToggle from "./components/darkModeToggle";
+import Navbar from "./components/navbar";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
             suppressHydrationWarning>
                 <ThemeProvider>
                     <DarkModeToggle />
+                    <Navbar />
                     {children}
                 </ThemeProvider>
             </body>
