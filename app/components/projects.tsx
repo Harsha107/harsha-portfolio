@@ -36,8 +36,12 @@ export default function ProjectsComp() {
                         <p className="-m-6">{project.status === "Completed" ? <Check className="text-green-500 bg-green-100 p-1 rounded-full text-sm"/> : <CircleEllipsis className="text-yellow-500 bg-yellow-100 p-1 text-sm rounded-full"/>}</p>
                         <h3 className="font-semibold text-xl">{project.name}</h3>
                         <p className="font-extralight text-sm">{project.description}</p>
-                        <p className="text-sm font-light">{project.stack}</p>
-                        <a href={project.githubLink}><Github /></a>
+                        <span className="grid grid-cols-3 gap-4">
+                            {project.stack.map((item, idx) => (
+                                <span key={idx} className="bg-gray-100 py-1 rounded-full text-xs">{item}</span>
+                            ))}
+                        </span>
+                        <a href={project.githubLink} className="flex justify-center"><Github/></a>
                     </motion.div>
                 ))}
             </div>

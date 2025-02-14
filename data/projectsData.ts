@@ -2,7 +2,7 @@ const projectsData = [
     {
         name: "Business Bankruptcy Prediction",
         description: "Developed a deep learning model to predict bankruptcies of businesses using CNN and LSTM networks, acheiving 96.11% accuracy.",
-        stack: ["Python", "scikit-learn", ""],
+        stack: ["Python", "scikit-learn"],
         status: "Completed",
         githubLink: "https://github.com/Harsha107/Bankruptcy-prediction"
     },
