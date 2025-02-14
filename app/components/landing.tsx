@@ -13,7 +13,7 @@ export default function LandingComp() {
                 <div>
                     <p className="font-extralight text-2xl">Hey there! 👋</p>
                     <span className="flex flex-row gap-2 font-extrabold text-4xl">
-                        <p>I'm</p>
+                        <p>I&apos;m</p>
                         <p className="text-blue-500">Harshadeep Chowdary Kommareddi</p>
                     </span>
                 </div>
@@ -49,5 +49,5 @@ export default function LandingComp() {
 
             <Image src={pfp} alt="profile-pic" className="size-96 rounded-full"/>
         </section>
-    )
+    );
 }
