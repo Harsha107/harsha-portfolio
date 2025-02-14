@@ -41,7 +41,7 @@ export default function ProjectsComp() {
                                 <span key={idx} className="bg-gray-100 py-1 rounded-full text-xs">{item}</span>
                             ))}
                         </span>
-                        <a href={project.githubLink} className="flex justify-center"><Github/></a>
+                        <a href={project.githubLink} className="flex justify-center"><Github className="rounded-full p-1 bg-black text-white"/></a>
                     </motion.div>
                 ))}
             </div>
