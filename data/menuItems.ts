@@ -1,4 +1,4 @@
-import { Home, User, Folder, Code, Mail, FileText, ChevronRight } from "lucide-react";
+import { Home, User, Folder, Code, Mail, FileText, ChevronRight, Download } from "lucide-react";
 
 const menuItems = [
   { name: "Harsha", icon: Home, href: "#harsha" },
@@ -6,7 +6,7 @@ const menuItems = [
   { name: "Projects", icon: Folder, href: "#projects" },
   { name: "Skills", icon: Code, href: "#skills" },
   { name: "Contact", icon: Mail, href: "#contact" },
-  { name: "Resume", icon: FileText, href: "#resume" },
+  { name: "Resume", icon: FileText, href: "/Harshadeep Chowdary Kommareddi CV.pdf", download: true },
 ];
 
 export default menuItems;

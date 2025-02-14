@@ -1,6 +1,8 @@
 import React from "react";
 import LandingComp from "./components/landing";
 import ProjectsComp from "./components/projects";
+import ContactComp from "./components/contact";
+import SkillsComp from "./components/skills";
 // import About from "./components/about";
 
 export default function Home() {
@@ -9,6 +11,8 @@ export default function Home() {
             <LandingComp />
             {/* <About /> */}
             <ProjectsComp />
+            <SkillsComp />
+            <ContactComp />
         </main>
     )
 }

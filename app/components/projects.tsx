@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function ProjectsComp() {
     return (
-        <section className="flex flex-col gap-20 h-screen items-center justify-center">
+        <section id="projects" className="flex flex-col gap-20 h-screen items-center justify-center">
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
