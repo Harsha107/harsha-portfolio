@@ -6,7 +6,8 @@ import contactData from "@/data/contactData";
 
 export default function ContactComp() {
     return (
-        <section id="contact" className="h-screen flex flex-col gap-16 justify-center items-center p-10">
+        <section id="contact" className="h-screen flex justify-center items-center">
+            <div className="flex flex-col rounded-lg p-16 gap-16 dark:bg-gray-900">
             <motion.h1 
                 className="text-5xl font-extrabold text-gray-800 dark:text-white"
                 initial={{ opacity: 0, y: -50 }}
@@ -34,6 +35,7 @@ export default function ContactComp() {
                     </motion.div>
                 ))}
             </motion.div>
+            </div>
         </section>
     );
 }

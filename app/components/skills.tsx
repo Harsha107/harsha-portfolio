@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import skills from "@/data/skillsData";
@@ -11,7 +12,7 @@ export default function SkillsComp() {
   }, []);
 
   return (
-    <section id="skills" className="py-16 text-black dark:text-white">
+    <section id="skills" className="py-16 text-black dark:text-white dark:bg-gray-900 rounded-lg">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">My Skills</h2>
         <p className="text-gray-400 mb-12">Key technologies I use in data analytics and web development.</p>
