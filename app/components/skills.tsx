@@ -14,7 +14,7 @@ export default function SkillsComp() {
   return (
     <section id="skills" className="py-16 text-black dark:text-white dark:bg-gray-900 rounded-lg">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">My Skills</h2>
+        <h2 className="text-4xl font-extrabold mb-6">My Skills</h2>
         <p className="text-gray-400 mb-12">Key technologies I use in data analytics and web development.</p>
       </div>
 
@@ -22,7 +22,7 @@ export default function SkillsComp() {
         {skills.map((skill, index) => (
           <motion.div 
             key={index}
-            className="flex flex-col items-center p-4 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-md hover:scale-105 transition-transform duration-300"
+            className="flex flex-col items-center p-4 rounded-lg dark:bg-gray-800 shadow-md hover:scale-105 transition-transform duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={isClient ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.1 }}
