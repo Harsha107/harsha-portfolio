@@ -8,11 +8,11 @@ import pfp from '../../public/pfp.jpg';
 
 export default function LandingComp() {
     return (
-        <section id="harsha" className="ml-10 flex h-screen flex-row gap-10 items-center justify-center">
+        <section id="harsha" className="md:ml-10 flex flex-col-reverse h-screen md:flex-row gap-10 items-center justify-center">
             <div>
                 <div>
-                    <p className="font-extralight text-2xl">Hey there! 👋</p>
-                    <span className="flex flex-row gap-2 font-extrabold text-4xl">
+                    <p className="font-extralight md:text-2xl">Hey there! 👋</p>
+                    <span className="flex flex-row gap-2 text-xl font-extrabold md:text-4xl">
                         <p>I&apos;m</p>
                         <p className="text-blue-500">Harshadeep Chowdary Kommareddi</p>
                     </span>
@@ -39,7 +39,7 @@ export default function LandingComp() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 1 }}
-                    className="mt-4 text-lg text-gray-500 dark:text-gray-400 max-w-2xl"
+                    className="mt-4 md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl"
                 >
                     A passionate Data Enthusiast, AI Innovator, and Web Developer, driven by the power of
                     technoloy to solve real-world problems. Loves transforming data into insights, building
@@ -47,7 +47,7 @@ export default function LandingComp() {
                 </motion.p>
             </div>
 
-            <Image src={pfp} alt="profile-pic" className="size-96 rounded-full"/>
+            <Image src={pfp} alt="profile-pic" className="size-72 md:size-96 rounded-full"/>
         </section>
     );
 }

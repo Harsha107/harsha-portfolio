@@ -7,7 +7,7 @@ import About from "./components/about";
 
 export default function Home() {
     return (
-        <main className="mx-20">
+        <main className="m-10 md:mx-20">
             <LandingComp />
             <About />
             <ProjectsComp />

@@ -6,10 +6,10 @@ import contactData from "@/data/contactData";
 
 export default function ContactComp() {
     return (
-        <section id="contact" className="h-screen flex justify-center items-center">
-            <div className="flex flex-col rounded-lg p-16 gap-16 dark:bg-gray-900">
+        <section id="contact" className="min-h-screen flex items-center justify-center px-4">
+            <div className="flex flex-col rounded-lg gap-8 md:gap-16 p-8 md:p-16 dark:bg-gray-900 w-full max-w-2xl">
                 <motion.h1 
-                    className="text-4xl font-extrabold text-gray-800 dark:text-white"
+                    className="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-white text-center"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -17,7 +17,7 @@ export default function ContactComp() {
                     Contact Me!!
                 </motion.h1>
                 <motion.div 
-                    className="flex flex-col gap-8 p-8 rounded-lg dark:bg-gray-800"
+                    className="flex flex-col gap-4 md:gap-8 p-4 md:p-8 rounded-lg dark:bg-gray-800"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8 }}

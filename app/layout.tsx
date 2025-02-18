@@ -26,7 +26,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${geistSans} ${geistMono} antialiased mx-20 transition-colors duration-300`}
+                className={`${geistSans} ${geistMono} antialiased md:mx-20 transition-colors duration-300`}
             suppressHydrationWarning>
                 <ThemeProvider>
                     <DarkModeToggle />

@@ -15,27 +15,27 @@ const About = () => {
                 transition={{ duration: 0.6, ease: 'easeOut' }}
                 className="dark:bg-gray-800 mb-8 p-8 rounded-lg"
             >
-                <h2 className="text-4xl font-extrabold mb-6 text-black dark:text-white">About Me</h2>
-                <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg">
+                <h2 className="text-2xl md:text-4xl font-extrabold mb-6 text-black dark:text-white">About Me</h2>
+                <p className="text-gray-700 dark:text-gray-400 leading-relaxed md:text-lg">
                   I am a passionate <span className="font-semibold text-blue-500">Data Enthusiast, AI Enthusiast, and Web Developer</span> dedicated to building intelligent solutions that merge data, AI, and modern web technologies. 
                   Currently pursuing a <span className="font-semibold text-blue-500">Bachelor of Engineering (Hons.) in Computer Science</span> at BITS Pilani, Dubai Campus, I have developed a strong foundation in 
                     <span className="font-semibold text-blue-500"> machine learning, deep learning, cryptography, and data science</span>.
                 </p>
-                <p className="text-gray-700 dark:text-gray-400 leading-relaxed text-lg mt-6">
+                <p className="text-gray-700 dark:text-gray-400 leading-relaxed md:text-lg mt-6">
                   My journey in <span className="font-semibold text-blue-500">web development</span> has been enhanced through hands-on experience, including internships at Hashgate Technology and KPTAC Technologies. 
                   At Hashgate, I worked as a <span className="font-semibold text-blue-500">junior front-end developer</span>, building websites with Shopify, HTML, CSS, and React.js. Now, at KPTAC Technologies, I continue expanding my expertise in <span className="font-semibold text-blue-500">Next.js, TypeScript, FastAPI, and TailwindCSS</span>, focusing on creating seamless, high-performance web applications.
                 </p>
             </motion.div>
 
             <div className="py-16 px-6 max-w-6xl mx-auto dark:bg-gray-800 rounded-lg">
-                <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">
+                <h2 className="text-2xl md:text-4xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">
                     Experience Timeline
                 </h2>
 
                 <div className="relative">
                     <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-300"></div>
 
-                    <div className="flex flex-col md:flex-row md:justify-between items-center">
+                    <div className="flex flex-col gap-10 md:gap-0 md:flex-row md:justify-between items-center">
                         {experiencesData.map((exp, index) => (
                             <motion.div
                                 key={index}
