@@ -8,12 +8,12 @@ import Image from "next/image";
 const About = () => {
   return (
     <section id="about" className="">
-        <div className="px-8 py-8 dark:bg-gray-900">
+        <div className="px-4 py-4 md:px-8 md:py-8 dark:bg-gray-900">
             <motion.div 
                 initial={{ x: -80, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6, ease: 'easeOut' }}
-                className="dark:bg-gray-800 mb-8 p-8 rounded-lg"
+                className="dark:bg-gray-800 mb-8 p-4 md:p-8 rounded-lg"
             >
                 <h2 className="text-2xl md:text-4xl font-extrabold mb-6 text-black dark:text-white">About Me</h2>
                 <p className="text-gray-700 dark:text-gray-400 leading-relaxed md:text-lg">

@@ -9,7 +9,7 @@ export default function ContactComp() {
         <section id="contact" className="min-h-screen flex items-center justify-center px-4">
             <div className="flex flex-col rounded-lg gap-8 md:gap-16 p-8 md:p-16 dark:bg-gray-900 w-full max-w-2xl">
                 <motion.h1 
-                    className="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-white text-center"
+                    className="text-2xl md:text-4xl font-extrabold text-gray-800 dark:text-white text-center"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -29,9 +29,12 @@ export default function ContactComp() {
                             whileHover={{ scale: 1.1 }}
                         >
                             <a href={reach} target="_blank" rel="noopener noreferrer">
-                                <Icon size={40} className={`${styling} transition-colors duration-300 hover:text-gray-600 dark:hover:text-gray-100`} />
+                                <Icon
+                                    className={`w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 ${styling} transition-colors duration-300 hover:text-gray-600 dark:hover:text-gray-100`}
+                                />
+
                             </a>
-                            <p className="text-lg font-medium text-gray-700 dark:text-white">{display}</p>
+                            <p className="text-xs md:text-lg font-medium text-gray-700 dark:text-white">{display}</p>
                         </motion.div>
                     ))}
                 </motion.div>

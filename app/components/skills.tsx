@@ -14,7 +14,7 @@ export default function SkillsComp() {
   return (
     <section
       id="skills"
-      className="mt-10 md:mt-0 py-16 text-black dark:text-white dark:bg-gray-900 rounded-lg"
+      className="mt-20 md:mt-0 py-16 text-black dark:text-white dark:bg-gray-900 rounded-lg"
     >
       <div className="max-w-5xl mx-auto text-center px-4">
         <h2 className="text-4xl font-extrabold mb-6">My Skills</h2>
