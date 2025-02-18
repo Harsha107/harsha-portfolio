@@ -16,10 +16,10 @@ export default function ProjectsComp() {
                     transition={{ duration: 0.5 }}
                     className="flex flex-wrap items-center justify-between gap-4"
                 >
-                    <h2 className="text-3xl font-extrabold">Projects</h2>
+                    <h2 className="text2xl md:text-3xl font-extrabold">Projects</h2>
                     <Link 
                         href='https://github.com/Harsha107?tab=repositories' 
-                        className="ring-2 py-2 px-4 ring-blue-500 text-blue-500 hover:ring-0 hover:bg-blue-500 hover:text-white transition duration-300"
+                        className="text-sm md:text-base ring-2 py-2 px-4 ring-blue-500 text-blue-500 hover:ring-0 hover:bg-blue-500 hover:text-white transition duration-300"
                     >
                         View More
                     </Link>
