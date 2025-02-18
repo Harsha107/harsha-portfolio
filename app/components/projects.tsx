@@ -17,7 +17,7 @@ export default function ProjectsComp() {
                     className="flex flex-row gap-[905px]"
                 >
                     <h2 className="text-3xl font-extrabold">Projects</h2>
-                    <Link href='./projects' className="ring-2 py-2 px-4 ring-blue-500 text-blue-500 hover:ring-0 hover:bg-blue-500 hover:text-white duration-300">View More</Link>
+                    <Link href='https://github.com/Harsha107?tab=repositories' className="ring-2 py-2 px-4 ring-blue-500 text-blue-500 hover:ring-0 hover:bg-blue-500 hover:text-white duration-300">View More</Link>
                 </motion.div>
 
                 <div className="grid grid-cols-3 gap-10">
