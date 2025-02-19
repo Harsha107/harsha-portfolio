@@ -42,7 +42,7 @@ export default function LandingComp() {
                     className="mt-4 md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl"
                 >
                     A passionate Data Enthusiast, AI Innovator, and Web Developer, driven by the power of
-                    technoloy to solve real-world problems. Loves transforming data into insights, building
+                    technology to solve real-world problems. Loves transforming data into insights, building
                     intelligent AI solutions, and crafting seamless digital experiences. Always learning, always creating.
                 </motion.p>
             </div>
