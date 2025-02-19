@@ -34,7 +34,8 @@ export default function Navbar() {
   return (
     <motion.div
       animate={{ width: expanded ? "10rem" : "4rem" }}
-      className={`fixed -z-10 md:z-10 top-0 left-0 h-screen bg-white dark:bg-cursed-black md:dark:bg-black text-black dark:text-white flex flex-col py-4 transition-all ${expanded ? "shadow-lg z-10" : ""}`}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className={`fixed md:z-10 top-0 left-0 h-screen flex flex-col py-4 ${expanded ? "shadow-lg z-10 bg-white dark:bg-cursed-black" : "bg-transparent"}`}
     >
       <div className="flex justify-between p-2">
         {isMobile && (

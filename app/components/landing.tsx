@@ -8,7 +8,7 @@ import pfp from '../../public/pfp.jpg';
 
 export default function LandingComp() {
     return (
-        <section id="harsha" className="md:ml-10 flex flex-col-reverse h-screen md:flex-row gap-10 items-center justify-center">
+        <section id="harsha" className="px-8 md:px-0 md:ml-10 flex flex-col-reverse h-screen md:flex-row gap-10 items-center justify-center">
             <div>
                 <div>
                     <p className="font-extralight md:text-2xl">Hey there! 👋</p>
