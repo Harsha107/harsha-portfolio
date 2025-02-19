@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import { ThemeProvider } from "./components/theme";
 import DarkModeToggle from "./components/darkModeToggle";
@@ -32,6 +33,7 @@ export default function RootLayout({
                     <DarkModeToggle />
                     <Navbar />
                     {children}
+                    <Analytics />
                 </ThemeProvider>
             </body>
         </html>
