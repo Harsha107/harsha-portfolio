@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function ProjectsComp() {
     return (
         <section id="projects" className="mt-10 md:mt-0 flex min-h-screen items-center justify-center">
-            <div className="flex flex-col rounded-lg gap-10 dark:bg-gray-900 px-8 py-16 w-full max-w-6xl">
+            <div className="flex flex-col rounded-lg gap-10 dark:bg-gray-900 px-8 py-8 w-full max-w-6xl">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,13 @@ export default function ProjectsComp() {
                     {projectsData.map((project, index) => (
                         <motion.div 
                             key={index}
-                            className="flex flex-col gap-6 shadow-lg p-6 text-center rounded-lg bg-white dark:bg-gray-800 transform hover:scale-105 transition duration-300 ease-in-out"
+                            className="flex flex-col gap-6 shadow-lg p-6 text-center rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 ease-out"
+                            style={{ 
+                                willChange: "transform", 
+                                backfaceVisibility: "hidden", 
+                                transform: "translateZ(0)", 
+                                transformStyle: "preserve-3d"
+                            }}
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
@@ -37,7 +43,11 @@ export default function ProjectsComp() {
                                 duration: 0.4,
                                 ease: "easeOut"
                             }}
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{ 
+                                scale: 1.03, 
+                                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                                translateZ: 0
+                            }}
                         >
                             <p className="-mt-8 -ml-8">
                                 {project.status === "Completed" ? 
@@ -46,7 +56,7 @@ export default function ProjectsComp() {
                                     <CircleEllipsis className="text-yellow-500 bg-yellow-100 p-1 text-sm rounded-full"/>
                                 }
                             </p>
-                            <h3 className="font-semibold text-lg">{project.name}</h3>
+                            <a href={project.githubLink} className="hover:underline duration-300"><h3 className="font-semibold text-lg">{project.name}</h3></a>
                             <p className="font-light text-sm">{project.description}</p>
                             <div className="flex flex-wrap gap-2 justify-center">
                                 {project.stack.map((item, idx) => (
