@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "./components/theme";
 import DarkModeToggle from "./components/darkModeToggle";
 import Navbar from "./components/navbar";
+import Chatbot from "./components/chatbot";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
                 <ThemeProvider>
                     <DarkModeToggle />
                     <Navbar />
+                    <Chatbot />
                     {children}
                     <Analytics />
                 </ThemeProvider>
