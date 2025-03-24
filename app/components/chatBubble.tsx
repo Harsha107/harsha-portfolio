@@ -74,7 +74,7 @@ export default function ChatBubble() {
             {isOpen && (
                 <div className="flex flex-col w-80 sm:w-96 h-[500px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
                     <div className="flex flex-row justify-between py-2 px-4">
-                        <h3 className="font-medium">Chat with Harshadeep's Portfolio Bot</h3>
+                        <h3 className="font-medium">Chat with Harshadeep&apos;s Portfolio Bot</h3>
                     
                         <button
                             onClick={toggleChat}
