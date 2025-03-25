@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 from langchain.schema import HumanMessage, AIMessage, SystemMessage
-from chatbot import chat_graph, ChatState
+from .chatbot import chat_graph, ChatState
 
 app = FastAPI(title="Portfolio Chatbot API")
 

@@ -5,7 +5,7 @@ from langchain.schema import HumanMessage, AIMessage, SystemMessage
 import json
 import os
 from dotenv import load_dotenv
-from portfolio_data import portfolio_data
+from .portfolio_data import portfolio_data
 
 load_dotenv()
 
