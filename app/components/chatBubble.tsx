@@ -66,7 +66,7 @@ export default function ChatBubble() {
                     <div className="absolute -top-20 -left-1 transform translate-x-[-20%] whitespace-nowrap pointer-events-none">
                         <div className="text-lg font-handwritting mb-2">Chat with me!!</div>
                         <div className="h-24 w-6 mx-auto relative">
-                            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.339 367.34" xmlSpace="preserve" transform="rotate(45)matrix(1, 0, 0, -1, 0, 0)" className="pointer-events-none">
+                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.339 367.34" xmlSpace="preserve" transform="rotate(45)matrix(1, 0, 0, -1, 0, 0)" className="text-black dark:text-white pointer-events-none">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
