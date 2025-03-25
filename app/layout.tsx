@@ -28,6 +28,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet"></link>
+            </head>
             <body
                 className={`${geistSans} ${geistMono} antialiased md:mx-20 transition-colors duration-300`}
             suppressHydrationWarning>

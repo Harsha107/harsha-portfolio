@@ -14,6 +14,9 @@ export default {
         foreground: "var(--foreground)",
         'cursed-black': '#121212',
       },
+      fontFamily: {
+        'handwritting': ['"Caveat"', '"Indie Flower"', '"cursive"'],
+      }
     },
   },
   plugins: [],
