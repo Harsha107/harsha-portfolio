@@ -13,7 +13,8 @@ const skills = [
   { name: "TypeScript", icon: "/icons/typescript.svg" },
   { name: "Next.js", icon: "/icons/nextjs.svg" },
   { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
-  { name: "Node.js", icon: "/icons/nodejs.svg" },,
+  { name: "Node.js", icon: "/icons/nodejs.svg" },
+  { name: "LangGraph", icon: "/icons/langgraph.svg"},
 ];
 
 export default skills;

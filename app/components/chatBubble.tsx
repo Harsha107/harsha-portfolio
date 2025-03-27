@@ -3,11 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaComment, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
-
-type Message = {
-    role: 'human' | 'ai';
-    content: string;
-};
+import { Message } from "@/types/Message";
 
 export default function ChatBubble() {
     const [isOpen, setIsOpen] = useState(false);
