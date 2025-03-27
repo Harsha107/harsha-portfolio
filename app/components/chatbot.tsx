@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Message } from "@/types/Message";
+import { Message } from "@/types/message";
 
 export default function Chatbot() {
     const [messages, setMessages] = useState<Message[]>([
