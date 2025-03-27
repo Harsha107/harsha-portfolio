@@ -24,19 +24,23 @@ To run this project locally, follow the steps below:
 
 ### FastAPI Backend
 
-1. Install Python Virtual environment (not necessary, but recommended):
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Harsha107/harsha-portfolio.git
+
+2. Install Python Virtual environment (not necessary, but recommended):
    ```bash
    python -m venv your-environment-name
 
-2. Run the environment:
+3. Run the environment:
    ```bash
    .\your-environment-name\Scripts\Activate
 
-3. Install the packages from requirements.txt file:
+4. Install the packages from requirements.txt file:
    ```bash
    pip install -r requirements.txt
 
-4. Run the uvicorn server:
+5. Run the uvicorn server:
    ```bash
    uvicorn app.api.main:app --reload
 
