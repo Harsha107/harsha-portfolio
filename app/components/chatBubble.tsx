@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { FaComment, FaTimes, FaPaperPlane } from 'react-icons/fa';
+import ReactMarkdown from 'react-markdown';
 
 type Message = {
     role: 'human' | 'ai';
@@ -114,7 +115,13 @@ export default function ChatBubble() {
                                     msg.role == 'human' ? 'ml-auto': ''
                                 } transition-all duration-300 ease-in-out hover:shadow-lg`}
                             >
-                                {msg.content}
+                                {msg.role === 'ai' ? (
+                                    <div className="prose prose-sm max-w-none prose-invert text-white">
+                                        <ReactMarkdown>
+                                            {msg.content.replace(/(\d+\.)/g, '### $1')}
+                                        </ReactMarkdown>
+                                    </div>
+                                ) : (msg.content)}
                             </div>
                         ))}
 
