@@ -46,8 +46,8 @@ portfolio_data = {
         },
         {
             "title": "Web Scraping Project - Amazon Product Price Watcher and Notification System",
-            "description": "Implemented a web scraper and built a web application using Streamlit where the application asks the users to enter a product URL and specify a desired price threshold. The system scrapes the product's title, price, rating, and access date daily, storing this data in a CSV file. An email notification is sent if the price falls below the user’s threshold.",
-            "tech stack": ["Python", "Streamlit", "BeautifulSoup"],
+            "description": "Built a full-stack Amazon price tracker using FastAPI, Next.js, TypeScript, and TailwindCSS. The system lets users enter product URLs and set price thresholds, scrapes product details daily, stores data in CSV format, and sends automated email alerts when prices drop below the user’s target.",
+            "tech stack": ["Python", "FastAPI", "Next.js", "Tailwind CSS", "TypeScript", "BeautifulSoup"],
         },
     ],
     "experience": [
@@ -65,7 +65,7 @@ portfolio_data = {
             "period": "January 2025 - Present",
             "location": "Dubai, UAE",
             "type": "on-site",
-            "description": "Working as a web development intern within the web development team. Developed and implemented various front-end components using Next.Js, Tailwind CSS, and TypeScript."
+            "description": "Working as a web development intern within the web development team. Developed and implemented various front-end components using Next.Js, Tailwind CSS, and TypeScript, and worked with FastAPI and bug fixing."
         },
     ],
     "certifications": [
