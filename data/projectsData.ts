@@ -8,10 +8,10 @@ const projectsData = [
     },
     {
         name: "Amazon Product Price Watcher & Notification System",
-        description: "Implemented a web scraper and built a web app using Streamlit to monitor and track the price changes of the entered product. It then sends an email notification if the price is dropped below the set threshold",
-        stack: ["Python", "Streamlit", "BeautifulSoup"],
-        status: "Pending",
-        githubLink: "https://github.com/Harsha107/Web-scraping"
+        description: "Built a full-stack Amazon price tracker using FastAPI, Next.js, TypeScript, and TailwindCSS. The system lets users enter product URLs and set price thresholds, scrapes product details daily, stores data in CSV format, and sends automated email alerts when prices drop below the user’s target.",
+        stack: ["Python", "FastAPI", "Next.js", "Tailwind CSS", "TypeScript", "BeautifulSoup"],
+        status: "Completed",
+        githubLink: "https://github.com/Harsha107/Web-scraping-revamped"
     },
     {
         name: "Engery Consumption Prediction",
